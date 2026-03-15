@@ -2,10 +2,7 @@
 A performance-focused, Gruvbox-themed setup for Hyprland.
 
 ## Screenshots
-<p align="center">
-  <img src="./ScreenShots/1.png" width="100%" />
-</p>
-
+![Rice](ScreenShots/1.png)
 ![Hyprland](https://img.shields.io/badge/WM-Hyprland-blue?style=for-the-badge&logo=hyprland)
 ![Theme](https://img.shields.io/badge/Theme-Gruvbox-orange?style=for-the-badge)
 
