@@ -1,0 +1,19 @@
+# Include the base gruvbox theme
+include "gruvbox"
+
+# Overrides for Fall/Fantasy aesthetic
+# Syntax: color-link <group> "<foreground>,<background>"
+color-link comment "#928374"           # Muted grey-brown
+color-link constant "#d65d0e"          # Burnt orange (Fall leaf)
+color-link identifier "#fabd2f"        # Golden yellow
+color-link statement "#fe8019"         # Bright pumpkin orange
+color-link symbol "#af3a03"            # Deep sienna
+color-link preproc "#8f3f71"           # Dusky purple (Fantasy vibe)
+color-link type "#b8bb26"              # Moss green
+color-link special "#fb4934"           # Deep red
+
+# Editor UI
+color-link cursor-line "#3c3836"
+color-link line-number "#7c6f64,#282828"
+color-link current-line-number "#fe8019,#3c3836"
+color-link statusline "#282828,#ebdbb2"

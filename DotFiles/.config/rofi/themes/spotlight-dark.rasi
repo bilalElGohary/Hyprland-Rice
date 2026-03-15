@@ -1,0 +1,88 @@
+
+configuration {
+    show-icons:      true;
+    icon-theme:      "Gruvbox-Plus-Dark"; /* Use the exact folder name from ~/.local/share/icons/ */
+    display-drun:    "";
+    disable-history: false;
+}
+
+* {
+    font:   "Montserrat 11";
+
+    bg0:    #282828E6;
+    bg1:    #3c383680;
+    bg2:    #458588E6;
+    brd:    #665c54;
+
+    fg0:    #ebdbb2;
+    fg1:    #fbf1c7;
+    fg2:    #a89984;
+
+    background-color:   transparent;
+    text-color:         @fg0;
+    margin:     0;
+    padding:    0;
+    spacing:    0;
+}
+
+window {
+    background-color:   @bg0;
+    location:       center;
+
+    /* Slightly wider for better readability */
+    width:          400;
+
+    border-radius:  0;
+    border:         1px;
+    border-color:   @brd;
+}
+
+inputbar {
+    font:       "Montserrat 16";
+    padding:    10px;
+    spacing:    10px;
+    children:   [ icon-search, entry ];
+}
+
+icon-search {
+    expand:     false;
+    filename:   "search";
+    size: 22px;
+}
+
+icon-search, entry, element-icon, element-text {
+    vertical-align: 0.5;
+}
+
+entry {
+    font:   inherit;
+    placeholder:         "Search";
+    placeholder-color:   @fg2;
+}
+
+listview {
+    /* 7 lines offers a good middle ground */
+    lines:      7;
+    columns:    1;
+    fixed-height:   false;
+    border:         1px 0 0;
+    border-color:   @bg1;
+}
+
+element {
+    padding:            8px 14px;
+    spacing:            12px;
+}
+
+element selected normal, element selected active {
+    background-color:   @bg2;
+    text-color:         @fg1;
+}
+
+element-icon {
+    size:   1.3em;
+}
+
+element-text {
+    text-color: inherit;
+}

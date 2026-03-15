@@ -1,0 +1,84 @@
+* {
+    border: none;
+    border-radius: 0 ;
+    /* Use Nerd Font and bump up size/weight for clarity */
+    font-family: "JetBrainsMono Nerd Font", "Roboto Mono Medium";
+    font-size: 8px; 
+    font-weight: 600; 
+    
+    /* THE FIX: Stop letters from blending */
+    letter-spacing: 1px; 
+    
+    min-height: 0;
+}
+window#waybar {
+    background-color: #282828;
+    /* background: rgb(0, 0, 0, 0); */
+    color: #ebdbb2;           /* Gruvbox Cream */
+}
+
+#workspaces button {
+    background-color: #3c3836;
+    color: #a89984;           /* Gruvbox Gray */
+    padding: 0 7px;
+    margin: 3px 3px;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+    background-color: #504945; /* Gruvbox Dark 2 */
+    color: #fabd2f;           /* Gruvbox Yellow highlight */
+    box-shadow: inset 0 -1px #fabd2f;
+}
+
+#workspaces button.urgent {
+    background-color: #fb4934; /* Gruvbox Red */
+    color: #282828;
+}
+
+/* Common style for all modules to ensure they don't blend */
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#tray,
+#mode,
+#idle_inhibitor
+#language,
+#window{
+    padding: 0 7px;
+    margin: 3px 3px;
+   /* border-radius: 8px; */
+    background-color: #3c3836; /* Gruvbox Dark 1 */
+    color: #ebdbb2;
+}
+
+#battery.charging {
+    color: #b8bb26; /* Gruvbox Green */
+}
+
+#battery.critical:not(.charging) {
+    background-color: #fb4934;
+    color: #ebdbb2;
+    animation: blink 0.5s linear infinite alternate;
+}
+
+#network.disconnected,
+#pulseaudio.muted {
+    color: #fe8019; /* Gruvbox Orange */
+}
+
+#tray {
+    background-color: #282828;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ebdbb2;
+        color: #282828;
+    }
+}
