@@ -20,17 +20,17 @@ To get this rice working, you'll need the following packages:
 
 1. Arch
 ```bash
-sudo pacman -S --needed alacritty rofi-wayland waybar swww hypridle hyprlock git micro firefox
+sudo pacman -S --needed alacritty rofi-wayland waybar swww hypridle hyprlock git micro firefox dunst
 # Use an AUR helper for these:
 yay -S wlogout hyprshot
 ```
 2. Fedora
 ```bash
-sudo dnf install alacritty rofi-wayland waybar swww hypridle hyprlock wlogout git micro firefox
+sudo dnf install alacritty rofi-wayland waybar swww hypridle hyprlock wlogout git micro firefox dunst
 ```
 3. Ubuntu / Debian
 ```bash
-sudo apt update && sudo apt install alacritty rofi waybar git micro firefox
+sudo apt update && sudo apt install alacritty rofi waybar git micro firefox dunst
 # Note: hyprlock/swww may require manual compilation on older versions
 ```
 4. Nixos
@@ -46,6 +46,7 @@ environment.systemPackages = with pkgs; [
   hyprshot
   micro
   firefox
+  dunst
 ];
 ```
 
