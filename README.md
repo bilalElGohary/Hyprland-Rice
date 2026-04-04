@@ -55,7 +55,7 @@ Once the dependencies are installed, you can apply the configurations:
 
 1. Clone the repository
 ```bash
-git clone https://github.com/bilalElGohary/HyprlandRice.git
+git clone [https://github.com/bilalElGohary/HyprlandRice.git](https://github.com/bilalElGohary/Hyprland-Rice.git)
 cd HyprlandRice
 ```
 2. Move the config files to your local directory
