@@ -18,3 +18,4 @@ hyprctl keyword decoration:inactive_opacity 0.8
 echo "cpu powermode............................"
 sudo cpupower frequency-set -g powersave
 
+notify-send "PowerMode." "just for acouple of secounds the powermode enabled"
