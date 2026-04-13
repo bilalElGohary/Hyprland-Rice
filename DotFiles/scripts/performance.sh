@@ -18,3 +18,4 @@ hyprctl keyword decoration:inactive_opacity 0.65
 echo "cpu performance........................."
 sudo cpupower frequency-set -g performance
 
+notify-send "Performance Mode." "just for acouple of secounds the performance mode enabled"
