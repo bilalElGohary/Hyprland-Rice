@@ -10,8 +10,7 @@ yay -Su
 sudo pacman -S vim 
 sudo pacman -S gcc g++ gdb
 sudo pacman -S ...
-yay -S cbonasi
+yay -S cbonasi excalidraw-desktop-bin
 
 # Simple notification:
 notify-send -u critical "SetUp Script" "the script finshed installing all pkgs." -i dialog-information
-
